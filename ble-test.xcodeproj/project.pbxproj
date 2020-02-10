@@ -15,6 +15,9 @@
 		4D32C70723EDE76A00DC0561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D32C70523EDE76A00DC0561 /* LaunchScreen.storyboard */; };
 		4D32C71223EDE76A00DC0561 /* ble_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C71123EDE76A00DC0561 /* ble_testTests.swift */; };
 		4D32C71D23EDE7D100DC0561 /* BLETestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C71C23EDE7D100DC0561 /* BLETestViewController.swift */; };
+		4D48DE1323F1AC84007810D4 /* InspectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48DE1223F1AC84007810D4 /* InspectorViewController.swift */; };
+		4D48DE1A23F1B168007810D4 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48DE1923F1B168007810D4 /* PeripheralTableViewCell.swift */; };
+		4D48DE1D23F1B32E007810D4 /* BLEDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48DE1C23F1B32E007810D4 /* BLEDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		4D32C71123EDE76A00DC0561 /* ble_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ble_testTests.swift; sourceTree = "<group>"; };
 		4D32C71323EDE76A00DC0561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D32C71C23EDE7D100DC0561 /* BLETestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLETestViewController.swift; sourceTree = "<group>"; };
+		4D48DE1223F1AC84007810D4 /* InspectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorViewController.swift; sourceTree = "<group>"; };
+		4D48DE1923F1B168007810D4 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
+		4D48DE1C23F1B32E007810D4 /* BLEDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		4D32C6F923EDE76800DC0561 /* ble-test */ = {
 			isa = PBXGroup;
 			children = (
+				4D48DE1B23F1B31D007810D4 /* Data */,
+				4D48DE1123F1AC6F007810D4 /* Inspector */,
 				4D32C6FA23EDE76800DC0561 /* AppDelegate.swift */,
 				4D32C6FC23EDE76800DC0561 /* SceneDelegate.swift */,
 				4D32C6FE23EDE76800DC0561 /* ViewController.swift */,
@@ -100,6 +108,23 @@
 				4D32C71323EDE76A00DC0561 /* Info.plist */,
 			);
 			path = "ble-testTests";
+			sourceTree = "<group>";
+		};
+		4D48DE1123F1AC6F007810D4 /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				4D48DE1223F1AC84007810D4 /* InspectorViewController.swift */,
+				4D48DE1923F1B168007810D4 /* PeripheralTableViewCell.swift */,
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		4D48DE1B23F1B31D007810D4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D48DE1C23F1B32E007810D4 /* BLEDevice.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D48DE1323F1AC84007810D4 /* InspectorViewController.swift in Sources */,
+				4D48DE1A23F1B168007810D4 /* PeripheralTableViewCell.swift in Sources */,
 				4D32C71D23EDE7D100DC0561 /* BLETestViewController.swift in Sources */,
 				4D32C6FF23EDE76800DC0561 /* ViewController.swift in Sources */,
+				4D48DE1D23F1B32E007810D4 /* BLEDevice.swift in Sources */,
 				4D32C6FB23EDE76800DC0561 /* AppDelegate.swift in Sources */,
 				4D32C6FD23EDE76800DC0561 /* SceneDelegate.swift in Sources */,
 			);
