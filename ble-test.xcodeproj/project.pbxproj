@@ -14,6 +14,7 @@
 		4D32C70423EDE76A00DC0561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D32C70323EDE76A00DC0561 /* Assets.xcassets */; };
 		4D32C70723EDE76A00DC0561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D32C70523EDE76A00DC0561 /* LaunchScreen.storyboard */; };
 		4D32C71223EDE76A00DC0561 /* ble_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C71123EDE76A00DC0561 /* ble_testTests.swift */; };
+		4D32C71D23EDE7D100DC0561 /* BLETestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C71C23EDE7D100DC0561 /* BLETestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4D32C70D23EDE76A00DC0561 /* ble-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ble-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D32C71123EDE76A00DC0561 /* ble_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ble_testTests.swift; sourceTree = "<group>"; };
 		4D32C71323EDE76A00DC0561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D32C71C23EDE7D100DC0561 /* BLETestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLETestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				4D32C70323EDE76A00DC0561 /* Assets.xcassets */,
 				4D32C70523EDE76A00DC0561 /* LaunchScreen.storyboard */,
 				4D32C70823EDE76A00DC0561 /* Info.plist */,
+				4D32C71C23EDE7D100DC0561 /* BLETestViewController.swift */,
 			);
 			path = "ble-test";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D32C71D23EDE7D100DC0561 /* BLETestViewController.swift in Sources */,
 				4D32C6FF23EDE76800DC0561 /* ViewController.swift in Sources */,
 				4D32C6FB23EDE76800DC0561 /* AppDelegate.swift in Sources */,
 				4D32C6FD23EDE76800DC0561 /* SceneDelegate.swift in Sources */,
