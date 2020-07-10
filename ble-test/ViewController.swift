@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var badgeView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let versionString = "v\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)--\(Bundle.main.infoDictionary?["CFBundleVersion"] as! String)"
+        badgeView.downloaded(from: "https://raster.shields.io/badge/trable--debug-\(versionString)-blue.png", contentMode: badgeView.contentMode)
     }
-
 
 }
 

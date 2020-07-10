@@ -12,11 +12,18 @@ class PeripheralTableViewCell: UITableViewCell {
 
     @IBOutlet var deviceName: UILabel!;
     @IBOutlet var rssi: UILabel!;
+    @IBOutlet var txPower: UILabel!;
+    @IBOutlet var dist: UILabel!;
+
     
     func setBleDevice(bleDevice: BLEDevice)
     {
         deviceName.text = bleDevice.deviceName;
-        rssi.text = String(bleDevice.rssi);
+//        rssi.text = String(bleDevice.rssi);
+        
+        rssi.text = "RSSI: \(bleDevice.rssi)"
+        txPower.text = "txPower: \(bleDevice.txPowerLevel ?? -1)"
+        dist.text = "\(bleDevice.distanceInMeters)m"
     }
     
     override func awakeFromNib() {

@@ -18,6 +18,19 @@
 		4D48DE1323F1AC84007810D4 /* InspectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48DE1223F1AC84007810D4 /* InspectorViewController.swift */; };
 		4D48DE1A23F1B168007810D4 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48DE1923F1B168007810D4 /* PeripheralTableViewCell.swift */; };
 		4D48DE1D23F1B32E007810D4 /* BLEDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48DE1C23F1B32E007810D4 /* BLEDevice.swift */; };
+		4D5F698824A361F30095EE0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F698724A361F30095EE0C /* AppDelegate.swift */; };
+		4D5F698A24A361F30095EE0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F698924A361F30095EE0C /* SceneDelegate.swift */; };
+		4D5F698C24A361F30095EE0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F698B24A361F30095EE0C /* ViewController.swift */; };
+		4D5F698F24A361F30095EE0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F698D24A361F30095EE0C /* Main.storyboard */; };
+		4D5F699124A361F30095EE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F699024A361F30095EE0C /* Assets.xcassets */; };
+		4D5F699424A361F30095EE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F699224A361F30095EE0C /* LaunchScreen.storyboard */; };
+		4D5F69A024A361F40095EE0C /* ble_test_appclipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F699F24A361F40095EE0C /* ble_test_appclipTests.swift */; };
+		4D5F69AB24A361F40095EE0C /* ble_test_appclipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F69AA24A361F40095EE0C /* ble_test_appclipUITests.swift */; };
+		4D5F69AF24A361F40095EE0C /* ble-test-appclip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4D5F698524A361F30095EE0C /* ble-test-appclip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D92C1E524B8B0A500A6997B /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1E424B8B0A500A6997B /* UIImageView+DownloadFromURL.swift */; };
+		4D92C1E724B8C67C00A6997B /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1E624B8C67C00A6997B /* UserDefault.swift */; };
+		4D92C1EB24B8E68300A6997B /* SFRoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1EA24B8E68300A6997B /* SFRoundedLabel.swift */; };
+		4D92C1ED24B8EB6700A6997B /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1EC24B8EB6700A6997B /* MeasureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +41,42 @@
 			remoteGlobalIDString = 4D32C6F623EDE76800DC0561;
 			remoteInfo = "ble-test";
 		};
+		4D5F699C24A361F40095EE0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D32C6EF23EDE76800DC0561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5F698424A361F30095EE0C;
+			remoteInfo = "ble-test-appclip";
+		};
+		4D5F69A724A361F40095EE0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D32C6EF23EDE76800DC0561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5F698424A361F30095EE0C;
+			remoteInfo = "ble-test-appclip";
+		};
+		4D5F69AD24A361F40095EE0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D32C6EF23EDE76800DC0561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5F698424A361F30095EE0C;
+			remoteInfo = "ble-test-appclip";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D530ECF24A35CE200C1888B /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				4D5F69AF24A361F40095EE0C /* ble-test-appclip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D32C6F723EDE76800DC0561 /* ble-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ble-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +94,25 @@
 		4D48DE1223F1AC84007810D4 /* InspectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorViewController.swift; sourceTree = "<group>"; };
 		4D48DE1923F1B168007810D4 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
 		4D48DE1C23F1B32E007810D4 /* BLEDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevice.swift; sourceTree = "<group>"; };
+		4D5F698524A361F30095EE0C /* ble-test-appclip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ble-test-appclip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5F698724A361F30095EE0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D5F698924A361F30095EE0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D5F698B24A361F30095EE0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D5F698E24A361F30095EE0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D5F699024A361F30095EE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D5F699324A361F30095EE0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D5F699524A361F30095EE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5F699624A361F30095EE0C /* ble_test_appclip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ble_test_appclip.entitlements; sourceTree = "<group>"; };
+		4D5F699B24A361F40095EE0C /* ble-test-appclipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ble-test-appclipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5F699F24A361F40095EE0C /* ble_test_appclipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ble_test_appclipTests.swift; sourceTree = "<group>"; };
+		4D5F69A124A361F40095EE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5F69A624A361F40095EE0C /* ble-test-appclipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ble-test-appclipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5F69AA24A361F40095EE0C /* ble_test_appclipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ble_test_appclipUITests.swift; sourceTree = "<group>"; };
+		4D5F69AC24A361F40095EE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D92C1E424B8B0A500A6997B /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
+		4D92C1E624B8C67C00A6997B /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		4D92C1EA24B8E68300A6997B /* SFRoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRoundedLabel.swift; sourceTree = "<group>"; };
+		4D92C1EC24B8EB6700A6997B /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +130,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D5F698224A361F30095EE0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5F699824A361F40095EE0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5F69A324A361F40095EE0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +159,9 @@
 			children = (
 				4D32C6F923EDE76800DC0561 /* ble-test */,
 				4D32C71023EDE76A00DC0561 /* ble-testTests */,
+				4D5F698624A361F30095EE0C /* ble-test-appclip */,
+				4D5F699E24A361F40095EE0C /* ble-test-appclipTests */,
+				4D5F69A924A361F40095EE0C /* ble-test-appclipUITests */,
 				4D32C6F823EDE76800DC0561 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +171,9 @@
 			children = (
 				4D32C6F723EDE76800DC0561 /* ble-test.app */,
 				4D32C70D23EDE76A00DC0561 /* ble-testTests.xctest */,
+				4D5F698524A361F30095EE0C /* ble-test-appclip.app */,
+				4D5F699B24A361F40095EE0C /* ble-test-appclipTests.xctest */,
+				4D5F69A624A361F40095EE0C /* ble-test-appclipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +181,7 @@
 		4D32C6F923EDE76800DC0561 /* ble-test */ = {
 			isa = PBXGroup;
 			children = (
+				4D92C1E324B8B07400A6997B /* helpers */,
 				4D48DE1B23F1B31D007810D4 /* Data */,
 				4D48DE1123F1AC6F007810D4 /* Inspector */,
 				4D32C6FA23EDE76800DC0561 /* AppDelegate.swift */,
@@ -115,6 +210,7 @@
 			children = (
 				4D48DE1223F1AC84007810D4 /* InspectorViewController.swift */,
 				4D48DE1923F1B168007810D4 /* PeripheralTableViewCell.swift */,
+				4D92C1EC24B8EB6700A6997B /* MeasureViewController.swift */,
 			);
 			path = Inspector;
 			sourceTree = "<group>";
@@ -127,6 +223,49 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		4D5F698624A361F30095EE0C /* ble-test-appclip */ = {
+			isa = PBXGroup;
+			children = (
+				4D5F698724A361F30095EE0C /* AppDelegate.swift */,
+				4D5F698924A361F30095EE0C /* SceneDelegate.swift */,
+				4D5F698B24A361F30095EE0C /* ViewController.swift */,
+				4D5F698D24A361F30095EE0C /* Main.storyboard */,
+				4D5F699024A361F30095EE0C /* Assets.xcassets */,
+				4D5F699224A361F30095EE0C /* LaunchScreen.storyboard */,
+				4D5F699524A361F30095EE0C /* Info.plist */,
+				4D5F699624A361F30095EE0C /* ble_test_appclip.entitlements */,
+			);
+			path = "ble-test-appclip";
+			sourceTree = "<group>";
+		};
+		4D5F699E24A361F40095EE0C /* ble-test-appclipTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5F699F24A361F40095EE0C /* ble_test_appclipTests.swift */,
+				4D5F69A124A361F40095EE0C /* Info.plist */,
+			);
+			path = "ble-test-appclipTests";
+			sourceTree = "<group>";
+		};
+		4D5F69A924A361F40095EE0C /* ble-test-appclipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5F69AA24A361F40095EE0C /* ble_test_appclipUITests.swift */,
+				4D5F69AC24A361F40095EE0C /* Info.plist */,
+			);
+			path = "ble-test-appclipUITests";
+			sourceTree = "<group>";
+		};
+		4D92C1E324B8B07400A6997B /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D92C1E424B8B0A500A6997B /* UIImageView+DownloadFromURL.swift */,
+				4D92C1E624B8C67C00A6997B /* UserDefault.swift */,
+				4D92C1EA24B8E68300A6997B /* SFRoundedLabel.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +276,12 @@
 				4D32C6F323EDE76800DC0561 /* Sources */,
 				4D32C6F423EDE76800DC0561 /* Frameworks */,
 				4D32C6F523EDE76800DC0561 /* Resources */,
+				4D530ECF24A35CE200C1888B /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D5F69AE24A361F40095EE0C /* PBXTargetDependency */,
 			);
 			name = "ble-test";
 			productName = "ble-test";
@@ -165,13 +306,66 @@
 			productReference = 4D32C70D23EDE76A00DC0561 /* ble-testTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4D5F698424A361F30095EE0C /* ble-test-appclip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5F69B024A361F40095EE0C /* Build configuration list for PBXNativeTarget "ble-test-appclip" */;
+			buildPhases = (
+				4D5F698124A361F30095EE0C /* Sources */,
+				4D5F698224A361F30095EE0C /* Frameworks */,
+				4D5F698324A361F30095EE0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ble-test-appclip";
+			productName = "ble-test-appclip";
+			productReference = 4D5F698524A361F30095EE0C /* ble-test-appclip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		4D5F699A24A361F40095EE0C /* ble-test-appclipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5F69B324A361F40095EE0C /* Build configuration list for PBXNativeTarget "ble-test-appclipTests" */;
+			buildPhases = (
+				4D5F699724A361F40095EE0C /* Sources */,
+				4D5F699824A361F40095EE0C /* Frameworks */,
+				4D5F699924A361F40095EE0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5F699D24A361F40095EE0C /* PBXTargetDependency */,
+			);
+			name = "ble-test-appclipTests";
+			productName = "ble-test-appclipTests";
+			productReference = 4D5F699B24A361F40095EE0C /* ble-test-appclipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D5F69A524A361F40095EE0C /* ble-test-appclipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5F69B624A361F40095EE0C /* Build configuration list for PBXNativeTarget "ble-test-appclipUITests" */;
+			buildPhases = (
+				4D5F69A224A361F40095EE0C /* Sources */,
+				4D5F69A324A361F40095EE0C /* Frameworks */,
+				4D5F69A424A361F40095EE0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5F69A824A361F40095EE0C /* PBXTargetDependency */,
+			);
+			name = "ble-test-appclipUITests";
+			productName = "ble-test-appclipUITests";
+			productReference = 4D5F69A624A361F40095EE0C /* ble-test-appclipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4D32C6EF23EDE76800DC0561 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "NICKCONTROL Studios";
 				TargetAttributes = {
@@ -181,6 +375,17 @@
 					4D32C70C23EDE76A00DC0561 = {
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = 4D32C6F623EDE76800DC0561;
+					};
+					4D5F698424A361F30095EE0C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					4D5F699A24A361F40095EE0C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4D5F698424A361F30095EE0C;
+					};
+					4D5F69A524A361F40095EE0C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4D5F698424A361F30095EE0C;
 					};
 				};
 			};
@@ -199,6 +404,9 @@
 			targets = (
 				4D32C6F623EDE76800DC0561 /* ble-test */,
 				4D32C70C23EDE76A00DC0561 /* ble-testTests */,
+				4D5F698424A361F30095EE0C /* ble-test-appclip */,
+				4D5F699A24A361F40095EE0C /* ble-test-appclipTests */,
+				4D5F69A524A361F40095EE0C /* ble-test-appclipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +429,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D5F698324A361F30095EE0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5F699424A361F30095EE0C /* LaunchScreen.storyboard in Resources */,
+				4D5F699124A361F30095EE0C /* Assets.xcassets in Resources */,
+				4D5F698F24A361F30095EE0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5F699924A361F40095EE0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5F69A424A361F40095EE0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -233,8 +465,12 @@
 				4D32C71D23EDE7D100DC0561 /* BLETestViewController.swift in Sources */,
 				4D32C6FF23EDE76800DC0561 /* ViewController.swift in Sources */,
 				4D48DE1D23F1B32E007810D4 /* BLEDevice.swift in Sources */,
+				4D92C1E724B8C67C00A6997B /* UserDefault.swift in Sources */,
 				4D32C6FB23EDE76800DC0561 /* AppDelegate.swift in Sources */,
+				4D92C1EB24B8E68300A6997B /* SFRoundedLabel.swift in Sources */,
 				4D32C6FD23EDE76800DC0561 /* SceneDelegate.swift in Sources */,
+				4D92C1ED24B8EB6700A6997B /* MeasureViewController.swift in Sources */,
+				4D92C1E524B8B0A500A6997B /* UIImageView+DownloadFromURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +482,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D5F698124A361F30095EE0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5F698C24A361F30095EE0C /* ViewController.swift in Sources */,
+				4D5F698824A361F30095EE0C /* AppDelegate.swift in Sources */,
+				4D5F698A24A361F30095EE0C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5F699724A361F40095EE0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5F69A024A361F40095EE0C /* ble_test_appclipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5F69A224A361F40095EE0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5F69AB24A361F40095EE0C /* ble_test_appclipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -253,6 +515,21 @@
 			isa = PBXTargetDependency;
 			target = 4D32C6F623EDE76800DC0561 /* ble-test */;
 			targetProxy = 4D32C70E23EDE76A00DC0561 /* PBXContainerItemProxy */;
+		};
+		4D5F699D24A361F40095EE0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5F698424A361F30095EE0C /* ble-test-appclip */;
+			targetProxy = 4D5F699C24A361F40095EE0C /* PBXContainerItemProxy */;
+		};
+		4D5F69A824A361F40095EE0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5F698424A361F30095EE0C /* ble-test-appclip */;
+			targetProxy = 4D5F69A724A361F40095EE0C /* PBXContainerItemProxy */;
+		};
+		4D5F69AE24A361F40095EE0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5F698424A361F30095EE0C /* ble-test-appclip */;
+			targetProxy = 4D5F69AD24A361F40095EE0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -269,6 +546,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				4D32C70623EDE76A00DC0561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4D5F698D24A361F30095EE0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5F698E24A361F30095EE0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D5F699224A361F30095EE0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5F699324A361F30095EE0C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -393,16 +686,21 @@
 		4D32C71723EDE76A00DC0561 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3A74G24KR;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LMFR8C2XKP;
 				INFOPLIST_FILE = "ble-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,16 +709,21 @@
 		4D32C71823EDE76A00DC0561 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3A74G24KR;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LMFR8C2XKP;
 				INFOPLIST_FILE = "ble-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +773,144 @@
 			};
 			name = Release;
 		};
+		4D5F69B124A361F40095EE0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "ble-test-appclip/ble_test_appclip.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LMFR8C2XKP;
+				INFOPLIST_FILE = "ble-test-appclip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D5F69B224A361F40095EE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "ble-test-appclip/ble_test_appclip.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LMFR8C2XKP;
+				INFOPLIST_FILE = "ble-test-appclip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D5F69B424A361F40095EE0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3A74G24KR;
+				INFOPLIST_FILE = "ble-test-appclipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app.ble-test-appclipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ble-test-appclip.app/ble-test-appclip";
+			};
+			name = Debug;
+		};
+		4D5F69B524A361F40095EE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3A74G24KR;
+				INFOPLIST_FILE = "ble-test-appclipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app.ble-test-appclipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ble-test-appclip.app/ble-test-appclip";
+			};
+			name = Release;
+		};
+		4D5F69B724A361F40095EE0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3A74G24KR;
+				INFOPLIST_FILE = "ble-test-appclipUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app.ble-test-appclipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ble-test-appclip";
+			};
+			name = Debug;
+		};
+		4D5F69B824A361F40095EE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3A74G24KR;
+				INFOPLIST_FILE = "ble-test-appclipUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.nickcontrolstudios.ble-test-app.ble-test-appclipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ble-test-appclip";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +937,33 @@
 			buildConfigurations = (
 				4D32C71A23EDE76A00DC0561 /* Debug */,
 				4D32C71B23EDE76A00DC0561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5F69B024A361F40095EE0C /* Build configuration list for PBXNativeTarget "ble-test-appclip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5F69B124A361F40095EE0C /* Debug */,
+				4D5F69B224A361F40095EE0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5F69B324A361F40095EE0C /* Build configuration list for PBXNativeTarget "ble-test-appclipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5F69B424A361F40095EE0C /* Debug */,
+				4D5F69B524A361F40095EE0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5F69B624A361F40095EE0C /* Build configuration list for PBXNativeTarget "ble-test-appclipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5F69B724A361F40095EE0C /* Debug */,
+				4D5F69B824A361F40095EE0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

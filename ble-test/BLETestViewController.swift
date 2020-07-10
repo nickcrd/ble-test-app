@@ -15,12 +15,15 @@ class BLETestViewController: UIViewController, CBPeripheralManagerDelegate, UITe
     @IBOutlet var statusLabel: UILabel!;
     @IBOutlet var nameBox: UITextField!;
     
-    var advertisementName = "test-ble app";
+    @UserDefault(key: "advertisement-name", defaultValue: "test-ble-app")
+    var advertisementName: String
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         bleManager.delegate = self;
+        
+        nameBox.text = advertisementName
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             if (self.bleManager.isAdvertising) {

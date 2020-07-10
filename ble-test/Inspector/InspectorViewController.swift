@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-class InspectorViewController: UITableViewController, CBCentralManagerDelegate, UITextViewDelegate
+class InspectorViewController: UITableViewController, CBCentralManagerDelegate, UITextFieldDelegate
 {
   
     let bleManager: CBCentralManager = CBCentralManager.init();
@@ -71,21 +71,29 @@ class InspectorViewController: UITableViewController, CBCentralManagerDelegate, 
         // Handle discovered peripherals
 
         
-       // CBAdvertisementDataLocalNameKey doesn't actually work
-       // guard let peripheralName = advertisementData[CBAdvertisementDataLocalNameKey] as? String else {
-        guard let peripheralName = peripheral.name else {
-            print("Device has no name");
+        guard var peripheralName = peripheral.name else {
+            print("No name defined")
             return;
         }
         
-        print("Success")
-    
+        let advertisedName = advertisementData[CBAdvertisementDataLocalNameKey] as? String
+        if (advertisedName != nil)
+        {
+                peripheralName = advertisedName!
+        }
+        
+        var txPowerLevel = advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double
+        
+        if (txPowerLevel == nil) {
+            print("tx Power is not present in advertisement data")
+        }
+        
        // Apply name filter
         if (filterName != nil && filterName!.lowercased() != peripheralName.lowercased()) {
             return;
         }
         
-        data.append(BLEDevice(deviceName: peripheralName, rssi: RSSI.intValue))
+        data.append(BLEDevice(deviceName: peripheralName, txPowerLevel: txPowerLevel, rssi: RSSI.doubleValue))
         tableView.reloadData()
     }
     
