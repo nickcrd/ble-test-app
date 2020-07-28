@@ -31,6 +31,9 @@
 		4D92C1E724B8C67C00A6997B /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1E624B8C67C00A6997B /* UserDefault.swift */; };
 		4D92C1EB24B8E68300A6997B /* SFRoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1EA24B8E68300A6997B /* SFRoundedLabel.swift */; };
 		4D92C1ED24B8EB6700A6997B /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1EC24B8EB6700A6997B /* MeasureViewController.swift */; };
+		4D92C1F024D026EE00A6997B /* TrableApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1EF24D026EE00A6997B /* TrableApi.swift */; };
+		4D92C1F224D0287000A6997B /* ClientEnrollmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1F124D0287000A6997B /* ClientEnrollmentResponse.swift */; };
+		4D92C1F424D028C900A6997B /* ServerDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92C1F324D028C900A6997B /* ServerDebugViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		4D92C1E624B8C67C00A6997B /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		4D92C1EA24B8E68300A6997B /* SFRoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRoundedLabel.swift; sourceTree = "<group>"; };
 		4D92C1EC24B8EB6700A6997B /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		4D92C1EF24D026EE00A6997B /* TrableApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrableApi.swift; sourceTree = "<group>"; };
+		4D92C1F124D0287000A6997B /* ClientEnrollmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientEnrollmentResponse.swift; sourceTree = "<group>"; };
+		4D92C1F324D028C900A6997B /* ServerDebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDebugViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 		4D32C6F923EDE76800DC0561 /* ble-test */ = {
 			isa = PBXGroup;
 			children = (
+				4D92C1EE24D026DF00A6997B /* ServerDebug */,
 				4D92C1E324B8B07400A6997B /* helpers */,
 				4D48DE1B23F1B31D007810D4 /* Data */,
 				4D48DE1123F1AC6F007810D4 /* Inspector */,
@@ -264,6 +271,16 @@
 				4D92C1EA24B8E68300A6997B /* SFRoundedLabel.swift */,
 			);
 			path = helpers;
+			sourceTree = "<group>";
+		};
+		4D92C1EE24D026DF00A6997B /* ServerDebug */ = {
+			isa = PBXGroup;
+			children = (
+				4D92C1EF24D026EE00A6997B /* TrableApi.swift */,
+				4D92C1F124D0287000A6997B /* ClientEnrollmentResponse.swift */,
+				4D92C1F324D028C900A6997B /* ServerDebugViewController.swift */,
+			);
+			path = ServerDebug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,11 +478,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D48DE1323F1AC84007810D4 /* InspectorViewController.swift in Sources */,
+				4D92C1F224D0287000A6997B /* ClientEnrollmentResponse.swift in Sources */,
 				4D48DE1A23F1B168007810D4 /* PeripheralTableViewCell.swift in Sources */,
+				4D92C1F424D028C900A6997B /* ServerDebugViewController.swift in Sources */,
 				4D32C71D23EDE7D100DC0561 /* BLETestViewController.swift in Sources */,
 				4D32C6FF23EDE76800DC0561 /* ViewController.swift in Sources */,
 				4D48DE1D23F1B32E007810D4 /* BLEDevice.swift in Sources */,
 				4D92C1E724B8C67C00A6997B /* UserDefault.swift in Sources */,
+				4D92C1F024D026EE00A6997B /* TrableApi.swift in Sources */,
 				4D32C6FB23EDE76800DC0561 /* AppDelegate.swift in Sources */,
 				4D92C1EB24B8E68300A6997B /* SFRoundedLabel.swift in Sources */,
 				4D32C6FD23EDE76800DC0561 /* SceneDelegate.swift in Sources */,
@@ -690,7 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = LMFR8C2XKP;
 				INFOPLIST_FILE = "ble-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -713,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = LMFR8C2XKP;
 				INFOPLIST_FILE = "ble-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
